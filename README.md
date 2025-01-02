@@ -10,6 +10,10 @@ It's a collection of all my projects using Django framework
 
 - create app: `python manage.py startapp <app-name>`
 
+- add tailwind: `python manage.py tailwind init`, `python manage.py tailwind install`
+
+- create superuser: `python manage.py createsuperuser`
+
 # About Django
 
 - Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design.

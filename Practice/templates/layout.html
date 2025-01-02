@@ -1,4 +1,4 @@
-{% load static %}
+{% load static %} {% load static tailwind_tags %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -6,25 +6,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="{% static 'home.css' %}" />
+    {% tailwind_css %}
     <title>{% block title %}default title{% endblock title %}</title>
   </head>
-  <body>
+  <body class="bg-yellow-100">
     <header>
-        <h1>{% block header %}default header{% endblock header %}</h1>
+      <h1 class="text-orange-500 text-3xl">{% block header %}default header{% endblock header %}</h1>
     </header>
-    <nav>
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/contact">Contact</a></li>
-        </ul>
+    <nav class="bg-red-800">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
     </nav>
     <main>
-        <h2>{% block subheading %}default heading{% endblock %}</h2>
-        <p>{% block content %}default content{% endblock %}</p>
+      <h2>{% block subheading %}default heading{% endblock %}</h2>
+      <p>{% block content %}default content{% endblock %}</p>
     </main>
     <footer>
-        <p>&copy; 2023 My Website</p>
+      <p>&copy; 2023 My Website</p>
     </footer>
-</body>
+  </body>
 </html>
