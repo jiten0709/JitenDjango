@@ -9,3 +9,6 @@ def about(request):
 
 def contact(request):
     return render(request, 'website/contact.html')
+
+def menu(request):
+    return render(request, 'practiceApp/menu.html')
