@@ -19,10 +19,11 @@
         <li><a href="{% url 'about' %}">About</a></li>
         <li><a href="{% url 'contact' %}">Contact</a></li>
         <li><a href="{% url 'menu' %}">Menu</a></li>
+        <li><a href="{% url 'menu_items_view' %}">Search by Item</a></li>
       </ul>
     </nav>
     <main>
-      <h2>{% block subheading %}default heading{% endblock %}</h2>
+      <h2>{% block subheading %}default subheading{% endblock %}</h2>
       <p>{% block content %}default content{% endblock %}</p>
     </main>
     <footer>
