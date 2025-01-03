@@ -10,7 +10,7 @@ It's a collection of all my projects using Django framework
 
 - create app: `python manage.py startapp <app-name>`
 
-- add tailwind: `python manage.py tailwind init`, `python manage.py tailwind install`
+- add and run tailwind: `python manage.py tailwind init`, `python manage.py tailwind install`, `python manage.py tailwind start`
 
 - create superuser: `python manage.py createsuperuser`
 
